@@ -1,0 +1,3 @@
+node_modules/
+build/
+src/__tests__/

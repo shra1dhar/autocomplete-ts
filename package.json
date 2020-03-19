@@ -1,0 +1,54 @@
+{
+  "name": "autocomplete-ts",
+  "version": "0.1.0",
+  "description": "Advanced React based autocomplete library. Similar to Google's autocomplete.",
+  "main": "build/index.jsnpm ",
+  "module": "build/index.es.js",
+  "jsnext:main": "build/index.es.js",
+  "author": "Shravan Dhar",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "@types/react": "^16.9.23",
+    "@types/react-dom": "^16.9.5",
+    "@types/react-test-renderer": "^16.9.2",
+    "jest": "^25.1.0",
+    "node-sass": "^4.13.1",
+    "postcss-modules": "^1.5.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-scripts-ts": "^3.1.0",
+    "react-test-renderer": "^16.13.0",
+    "rollup": "^2.0.6",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.2",
+    "rollup-plugin-postcss": "^2.5.0",
+    "rollup-plugin-sass": "^1.2.2",
+    "rollup-plugin-typescript2": "^0.26.0",
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.8.3"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "test": "jest"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  },
+  "files": [
+    "build"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shra1dhar/autocomplete-ts"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}

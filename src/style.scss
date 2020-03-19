@@ -1,0 +1,68 @@
+:root {
+  // Whole Component
+  --ac-ts-input-height: 25px;
+  --ac-ts-input-width: 300px;
+  --ac-ts-input-fontSize: .9em;
+
+  // Suggestion Element
+  --ac-ts-input-suggest-color: #bbb;
+  --ac-ts-input-suggest-bgColor: #fff;
+
+  // Active Element
+  --ac-ts-input-color: #333;
+  --ac-ts-input-active-bgColor: #fff;
+
+  // State
+  --ac-ts-input-disabled-bgColor: #ccc;
+  --ac-ts-input-border-focus: inherit;
+
+  // Layout
+  --ac-ts-input-padding: 5px;
+  --ac-ts-input-borderRadius: 5px;
+  --ac-ts-input-border: 1px solid #ccc;
+}
+
+.autocomplete--fill-input {
+
+  .autocomplete--input-suggestion {
+    background-color: var(--ac-ts-input-suggest-bgColor);
+    position: absolute;
+    z-index: -10;
+    color: var(--ac-ts-input-suggest-color);
+
+    &:disabled {
+      background-color: var(--ac-ts-input-disabled-bgColor);
+    }
+  }
+
+  .autocomplete--input-active {
+    background-color: transparent;
+    color: var(--ac-ts-input-color);
+    z-index: 10;
+
+    &:disabled {
+      background-color: transparent;
+    }
+
+    &:focus {
+      border-color: var(--ac-ts-input-border-focus);
+    }
+  }
+
+  .autocomplete--input-suggestion,
+  .autocomplete--input-active {
+    padding: var(--ac-ts-input-padding);
+    border: var(--ac-ts-input-border);
+    height: var(--ac-ts-input-height);
+    width: var(--ac-ts-input-width);
+    font-size: var(--ac-ts-input-fontSize);
+    border-radius: var(--ac-ts-input-borderRadius);
+  }
+}
+
+// Animations
+// @keyframes fade-appear {
+//   0 {
+
+//   }
+// }
