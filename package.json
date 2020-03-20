@@ -1,6 +1,6 @@
 {
   "name": "autocomplete-ts",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Advanced React based autocomplete library. Similar to Google's autocomplete.",
   "main": "build/index.jsnpm ",
   "module": "build/index.es.js",

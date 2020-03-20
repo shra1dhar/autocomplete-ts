@@ -1,7 +1,7 @@
 # Autocomplete-ts
 Advanced React based autocomplete library. Similar to Google's autocomplete.
 
-[![License: MIT](https://img.shields.io/github/license/shra1dhar/autocomplete-ts?color=blue)](https://img.shields.io/github/license/shra1dhar/autocomplete-ts) [![npm version](https://badge.fury.io/js/autocomplete-ts.svg)](https://badge.fury.io/js/autocomplete-ts)
+[![License: MIT](https://img.shields.io/github/license/shra1dhar/autocomplete-ts?color=blue)](https://img.shields.io/github/license/shra1dhar/autocomplete-ts) [![npm version](https://badge.fury.io/js/autocomplete-ts.svg)](https://badge.fury.io/js/autocomplete-ts) [![Build Status](https://travis-ci.org/shra1dhar/autocomplete-ts.svg?branch=master)](https://travis-ci.org/shra1dhar/autocomplete-ts)
 
 ### Demo GIF
 <img src="https://github.com/shra1dhar/autocomplete-ts/blob/master/asset/demo.gif?raw=true" width="370" alt=""/>
@@ -42,6 +42,59 @@ const countries = ['Australia', 'China', 'Denmark', 'India', 'Russia', 'South Af
 // render method
 render() {
 	return <AutoComplete  suggestList={countries}  />
+}
+```
+
+Add this file to your project:
+```css
+:root {
+	--ac-ts-input-height:  25px;
+	--ac-ts-input-width:  300px;
+	--ac-ts-input-fontSize:  .9em;
+	--ac-ts-input-suggest-color:  #bbb;
+	--ac-ts-input-suggest-bgColor:  #fff;
+	--ac-ts-input-color:  #333;
+	--ac-ts-input-active-bgColor:  #fff;
+	--ac-ts-input-disabled-bgColor:  #ccc;
+	--ac-ts-input-border-focus:  inherit;
+	--ac-ts-input-padding:  5px;
+	--ac-ts-input-borderRadius:  5px;
+	--ac-ts-input-border:  1px  solid  #ccc;
+}
+
+.autocomplete--fill-input  .autocomplete--input-suggestion {
+	background-color:  var(--ac-ts-input-suggest-bgColor);
+	position:  absolute;
+	z-index:  -10;
+	color:  var(--ac-ts-input-suggest-color);
+}
+
+.autocomplete--fill-input  .autocomplete--input-suggestion:disabled {
+	background-color:  var(--ac-ts-input-disabled-bgColor);
+}
+
+.autocomplete--fill-input  .autocomplete--input-active {
+	background-color:  transparent;
+	color:  var(--ac-ts-input-color);
+	z-index:  10;
+}
+
+.autocomplete--fill-input  .autocomplete--input-active:disabled {
+	background-color:  transparent;
+}
+
+.autocomplete--fill-input  .autocomplete--input-active:focus {
+	border-color:  var(--ac-ts-input-border-focus);
+}
+
+.autocomplete--fill-input  .autocomplete--input-suggestion,
+.autocomplete--fill-input  .autocomplete--input-active {
+	padding:  var(--ac-ts-input-padding);
+	border:  var(--ac-ts-input-border);
+	height:  var(--ac-ts-input-height);
+	width:  var(--ac-ts-input-width);
+	font-size:  var(--ac-ts-input-fontSize);
+	border-radius:  var(--ac-ts-input-borderRadius);
 }
 ```
 
