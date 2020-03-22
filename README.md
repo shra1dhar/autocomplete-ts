@@ -1,7 +1,7 @@
 # Autocomplete-ts
 Advanced React based autocomplete library. Similar to Google's autocomplete.
 
-[![License: MIT](https://img.shields.io/github/license/shra1dhar/autocomplete-ts?color=blue)](https://img.shields.io/github/license/shra1dhar/autocomplete-ts) [![npm version](https://badge.fury.io/js/autocomplete-ts.svg)](https://badge.fury.io/js/autocomplete-ts) [![Build Status](https://travis-ci.org/shra1dhar/autocomplete-ts.svg?branch=master)](https://travis-ci.org/shra1dhar/autocomplete-ts)
+[![License: MIT](https://img.shields.io/github/license/shra1dhar/autocomplete-ts?color=blue)](https://img.shields.io/github/license/shra1dhar/autocomplete-ts) [![npm version](https://badge.fury.io/js/autocomplete-ts.svg)](https://badge.fury.io/js/autocomplete-ts) [![Build Status](https://travis-ci.org/shra1dhar/autocomplete-ts.svg?branch=master)](https://travis-ci.org/shra1dhar/autocomplete-ts) [![PRs: Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen)](https://github.com/shra1dhar/autocomplete-ts)
 
 ### Demo GIF
 <img src="https://github.com/shra1dhar/autocomplete-ts/blob/master/asset/demo.gif?raw=true" width="370" alt=""/>
@@ -24,7 +24,7 @@ Advanced React based autocomplete library. Similar to Google's autocomplete.
 
 ### Installation
 Download and install via [npm package manager](https://www.npmjs.com/package/autocomplete-ts)
-```js
+```bash
 npm i autocomplete-ts
 ```
 ```jsx
@@ -45,7 +45,7 @@ render() {
 }
 ```
 
-Add this file to your project:
+Add this css to your project:
 ```css
 :root {
 	--ac-ts-input-height:  25px;
