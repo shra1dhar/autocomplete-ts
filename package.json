@@ -1,6 +1,6 @@
 {
   "name": "autocomplete-ts",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "description": "Advanced React based autocomplete library. Similar to Google's autocomplete.",
   "main": "build/index.jsnpm ",
   "module": "build/index.es.js",
@@ -42,7 +42,9 @@
     "testEnvironment": "node"
   },
   "files": [
-    "build"
+    "build/index.d.ts",
+    "build/index.es.js",
+    "autocomplete_style.css"
   ],
   "repository": {
     "type": "git",
