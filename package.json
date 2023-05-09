@@ -17,7 +17,7 @@
     "postcss-modules": "^1.5.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
-    "react-scripts-ts": "^3.1.0",
+    "react-scripts-ts": "^4.0.8",
     "react-test-renderer": "^16.13.0",
     "rollup": "^2.0.6",
     "rollup-plugin-commonjs": "^10.1.0",
